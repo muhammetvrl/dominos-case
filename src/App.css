@@ -209,6 +209,9 @@ footer {
   color: #000;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .pizzas {
     width: auto;
