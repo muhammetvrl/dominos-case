@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  background-color: rgb(240, 240, 247);
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+header {
+  height: 100px;
+  background-color: #000;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 960px;
+  margin: 0 auto;
+}
+.hero {
+  height: 382px;
+  background-color: #cf0a2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pizzas {
+  width: 960px;
+  margin: 0 auto;
+}
+.pizzas p {
+  margin: 40px 0;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(80, 80, 97);
+  margin-left: 20px;
+}
+
+.pizza-card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pizza-card-wrapper .pizza-header {
+  width: 100%;
+  background-color: #aaaaaa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  height: 171px;
+}
+.pizza-card-wrapper .pizza-header img {
+  padding: 13px 0;
+}
+.order-box {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 25px;
+}
+.order-box span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+.pizza-footer {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 50%;
+  background-color: #fff;
+  padding: 30px 25px;
+}
+.pizza-footer h3 {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #5b5b5b;
+}
+.pizza-footer p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.pizza-footer .price button {
+  padding: 7px 30px;
+  border-radius: 20px;
+  background-color: #cf0a2c;
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.pizza-footer .price span {
+  color: #f97600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+.pizza-footer .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pizza-card-wrapper .pizza {
+  margin: 0 7.5px;
+  border-radius: 20px;
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.pizza-card-wrapper .pizza:nth-child(1) {
+  margin-left: 15px;
+}
+.pizza-card-wrapper .pizza:nth-child(4) {
+  margin-left: 15px;
+}
+
+footer {
+  background: #000;
+  height: 340px;
+  margin-top: 50px;
+}
+.foter-wrap {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+.foter-wrap ul {
+  color: white;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-right: 70px;
+}
+.foter-wrap ul:last-child {
+  margin-right: 0;
+}
+.foter-wrap ul li:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+.foter-wrap ul li {
+  margin: 5px 0;
+}
+.added {
+  background-color: blueviolet !important;
+}
+.orders {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100px;
+}
+.orders .pizza {
+  border-radius: 20px;
+  border: 1px solid rgb(80, 80, 97);
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.orders .pizza button {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+}
+.orders .pizza span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 10px;
+  border-right: 1px solid rgb(80, 80, 97);
+  color: rgb(80, 80, 97);
+}
+.orders .pizza span {
+  margin-left: 10px;
+  color: #f97600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.orders .total {
+  border-top: 1px solid rgb(80, 80, 97);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.orders .total span {
+  color: #000;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pizzas {
+    width: auto;
+  }
+  header .wrapper {
+    width: auto;
+  }
+  footer {
+    height: auto;
+  }
+  .foter-wrap {
+    width: auto;
+  }
+  .orders {
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .pizzas {
+    width: auto;
+  }
+  header .wrapper {
+    width: auto;
+  }
+  footer {
+    height: auto;
+  }
+  .foter-wrap {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  header .wrapper a .logo {
+    width: 200px;
+  }
+  .orders {
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
